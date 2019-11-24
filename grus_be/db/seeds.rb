@@ -4,5 +4,11 @@ require 'factory_bot_rails'
 
 case Rails.env
 when 'development'
-  FactoryBot.create_list(:user, 3)
+  created_users = FactoryBot.create_list(:user, 3)
+
+  created_users.each do |user|
+    3.times do |n|
+      FactoryBot.create(:task, user: user)
+    end
+  end
 end
