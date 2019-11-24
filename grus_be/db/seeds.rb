@@ -4,6 +4,5 @@ require 'factory_bot_rails'
 
 case Rails.env
 when 'development'
-  thing = FactoryBot.create_list(:user, 3)
-  binding.pry
+  FactoryBot.create_list(:user, 3)
 end
