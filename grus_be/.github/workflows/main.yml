@@ -1,0 +1,11 @@
+name: Grus Build
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  trial-job:
+    name: "Trying out actions"
+    runs-on: ubuntu-latest
+    run: echo This is a test job
