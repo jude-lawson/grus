@@ -8,4 +8,6 @@ jobs:
   trial-job:
     name: "Trying out actions"
     runs-on: ubuntu-latest
-    run: echo This is a test job
+    steps:
+    - name: test echo
+      run: echo This is a test job
