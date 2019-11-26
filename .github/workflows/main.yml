@@ -2,7 +2,7 @@ name: Grus Build
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
 
 jobs:
   trial-job:
