@@ -4,4 +4,5 @@ class UsersController < ApplicationController
     return render json: user if user
     return render json: {}, status: 404
   end
+
 end
