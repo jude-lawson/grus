@@ -5,23 +5,23 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+/grus_be/.bundle
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
-/db/*.sqlite3-*
+/grus_be/db/*.sqlite3
+/grus_be/db/*.sqlite3-journal
+/grus_be/db/*.sqlite3-*
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/grus_be/log/*
+/grus_be/tmp/*
+!/grus_be/log/.keep
+!/grus_be/tmp/.keep
 
 # Ignore uploaded files in development.
-/storage/*
-!/storage/.keep
-.byebug_history
+/grus_be/storage/*
+!/grus_be/storage/.keep
+/grus_be/.byebug_history
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+/grus_be/config/master.key
